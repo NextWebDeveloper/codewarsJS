@@ -76,8 +76,31 @@ numbers.forEach(
 console.log(sum); */
 
 
-var x;
+// Maximum and Minimum Values of a List
 
-true || (x = 1);
+/* var min = function(list){
+	const arr = list;
+	let minimum = arr[0];
+	arr.forEach (
+		function findMin (currentValue) {
+			minimum = (currentValue < minimum) ? currentValue : minimum;
+		}
+	)
+	return minimum;
+}
 
-alert(x);
+var max = function(list){
+	const arr = list;
+	let maximum = arr[0];
+	arr.forEach (
+		function findMax (xi) {
+			maximum = xi > maximum ? xi : maximum;
+		}
+	)
+	return maximum;
+} */
+
+// List filtering strings
+// filter_list([1,'a','b',0,15]) == [1,0,15]
+// filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
+
