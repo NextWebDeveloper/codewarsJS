@@ -182,3 +182,37 @@ console.log(towerBuilder(4)); */
 
 console.log(alphabetPosition("The sunset sets at twelve o' clock.")); */
 
+// Your task is to write function findSum.
+// Upto and including n, this function will return the sum of all multiples of 3 and 5.
+// For example:
+// findSum(5) should return 8 (3 + 5)
+// findSum(10) should return 33 (3 + 5 + 6 + 9 + 10)
+
+/* function findSum(n) {
+	let result = 0;
+  for (let i = 0; i <= n; i += 1) {
+    if (i % 3 ===0 || i % 5 === 0) result += i
+  }
+  return result
+}
+
+console.log(findSum(100)); */
+
+// Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
+// It should remove all values from list a, which are present in list b.
+// array_diff([1,2],[1]) == [2]
+// If a value is present in b, all of its occurrences must be removed from the other:
+// array_diff([1,2,2,2,3],[2]) == [1,3]
+
+function array_diff(a, b) {
+	let c = [];
+	if (b.length > 0) {
+		for(value of a) {
+			if (b.includes(value) == false) c.push(value);
+			}
+		return c;
+	} else return a;
+}
+
+console.log(array_diff([-10,2,-8,6,0,0,20,-12,-1,-8,-16,7],[7,-16,-10,6,0]));
+
