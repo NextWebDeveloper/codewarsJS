@@ -228,3 +228,26 @@ console.log(array_diff([-10,2,-8,6,0,0,20,-12,-1,-8,-16,7],[7,-16,-10,6,0])); */
 }
 
 console.log(findUniq([0, 0, 0, 0, 1 ])); */
+
+
+// Write a function that takes an array of strings as an argument and returns a sorted array containing the same strings, ordered from shortest to longest.
+// For example, if this array were passed as an argument:
+// ["Telescopes", "Glasses", "Eyes", "Monocles"]
+// Your function would return the following array:
+// ["Eyes", "Glasses", "Monocles", "Telescopes"]
+// All of the strings in the array passed to your function will be different lengths, so you will not have to decide how to order multiple strings of the same length.
+
+/* function sortByLength (array) {
+	return array.sort((a,b)=>a.length-b.length);
+};
+
+console.log(sortByLength(["Telescopes", "Glasses", "Eyessssssssssssss", "Monocles"])) */
+
+
+// Add up all the whole numbers from 1 through a given number n.
+
+function f(n){
+	return (parseInt(n) === n && n > 0) ? n*(n+1)/2 : false;
+};
+
+console.log(f(5));
