@@ -263,3 +263,12 @@ console.log(f(5)); */
 }
 
 console.log(isIsogram("Dermatoglyphics")); */
+
+// Complete the solution so that the function will break up camel casing, using a space between words.
+// solution('camelCasing') // => should return 'camel Casing'
+
+function solution(string) {
+	return string.replace(/[A-Z]/g, " $&");
+}
+
+console.log(solution('camelCasingTestsfsdfTTTTT'));
